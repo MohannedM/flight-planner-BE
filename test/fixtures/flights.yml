@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  plane_type: MyString
+  origin: MyString
+  pnr: MyString
+  destination: MyString
+  seat_count: 1
+  reserved_seats: 1
+  flight_date: MyString
+
+two:
+  plane_type: MyString
+  origin: MyString
+  pnr: MyString
+  destination: MyString
+  seat_count: 1
+  reserved_seats: 1
+  flight_date: MyString
