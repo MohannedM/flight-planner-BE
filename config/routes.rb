@@ -7,5 +7,6 @@ Rails.application.routes.draw do
   put '/flights/book/:id', to: "flights#book_flight"
   get '/flights/book', to: "flights#booked_flights"
   resources :flights, only: [:create, :index, :show, :destroy]
+  get '/', to: "application#welcome"
   root to: "application#home"
 end
