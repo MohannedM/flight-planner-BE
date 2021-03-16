@@ -32,12 +32,11 @@ test:
   database: db/test.sqlite3
 
 production:
-  url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
   adapter: postgresql
   encoding: unicode
-  database: flight_planner
+  database: <%= ENV.fetch('DATABASE_URL') %>
   host: localhost
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: postgres
-  password: <%= ENV.fetch("SECRET_KEY_BASE") %>
+  password: <%= ENV.fetch('DATABASE_URL') %>
   timeout: 5000
