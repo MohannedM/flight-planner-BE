@@ -33,7 +33,7 @@ test:
 
 production:
   url: <%= ENV.fetch('DATABASE_URL', '').sub(/^postgres/, "postgis") %>
-  adapter: postgresql
+  adapter: postgis
   encoding: unicode
   database: flight_planner
   host: localhost
